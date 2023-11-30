@@ -25,6 +25,7 @@ function App() {
         </svg>
       </div>
 
+      <img className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-44" width="500px" height="auto" src="./Intersect.png" alt="cats" />
       <div className={`${menu} transition-all duration-700 ease-out-in`}>
         <Header />
       </div>
