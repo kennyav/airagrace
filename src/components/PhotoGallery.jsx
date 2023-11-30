@@ -1,7 +1,7 @@
 import React from 'react'
 
 // photos components
-import People from './Photos/People'
+import People from './People'
 
 export default function PhotoGallery() {
   return (
