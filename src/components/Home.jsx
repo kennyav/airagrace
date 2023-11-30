@@ -3,7 +3,7 @@ import ConfettiExplosion from 'react-confetti-explosion';
 
 export default function Home() {
    const [explosionKey, setExplosionKey] = React.useState(0);
-   const buttonTranslate = '-translate-x-3 translate-y-8'
+   const buttonTranslate = '-translate-x-3 md:translate-y-8 translate-y-10'
 
    function handleClick() {
       // Increment the explosion key to force re-rendering of ConfettiExplosion

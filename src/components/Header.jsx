@@ -10,10 +10,7 @@ export default function Header({ setMenu, menu }) {
    }
    return (
       <div
-         style={{
-            backdropFilter: 'blur(10px)',
-         }}
-         className={`z-10 ${menu} transition duration-700 ease-out-in absolute inset-0 flex flex-col h-screen w-screen bg-transparent font-bold lg:text-7xl text-5xl p-10 text-[#146C94]`}>
+         className={`z-10 ${menu} backdrop-blur-md transition duration-700 ease-out-in absolute inset-0 flex flex-col h-screen w-screen bg-transparent font-bold lg:text-7xl text-5xl p-10 text-[#146C94]`}>
          <Link to="/" onClick={handleClick}>
             <span className={`${spanStyle}`}>Home</span>
          </Link>
