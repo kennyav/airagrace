@@ -11,7 +11,6 @@ import {
 import Home from './components/Home.jsx'
 import PhotoGallery from './components/PhotoGallery.jsx'
 import About from './components/About.jsx'
-import Extra from './components/Extra.jsx'
 import Nav from './components/Nav.jsx';
 
 // people
@@ -35,7 +34,6 @@ function App() {
           path="/about"
           element={<About />}
         />
-        <Route path="/extra" element={<Extra />} />
         <Route path="/kenny" element={<Kenny />} />
         <Route path="/sarah" element={<Sarah />} />
         <Route path="/andrew" element={<Andrew />} />
