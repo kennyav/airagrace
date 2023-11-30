@@ -1,36 +1,34 @@
-import { useState } from 'react';
 import './WEB/css/author.css'
 
+// router
+import {
+  Routes,
+  Route,
+} from "react-router-dom";
+
+
 // component import
-import Header from './components/Header.jsx'
+import Home from './components/Home.jsx'
+import PhotoGallery from './components/PhotoGallery.jsx'
+import About from './components/About.jsx'
+import Extra from './components/Extra.jsx'
+import Nav from './components/Nav.jsx';
 
 function App() {
 
-  const [menu, setMenu] = useState(`-translate-x-full`)
-
-  function handleClick(e) {
-    e.preventDefault();
-    if (menu === `-translate-x-full`) {
-      setMenu(`translate-x-0`)
-    } else {
-      setMenu(`-translate-x-full`)
-    }
-  }
-
   return (
-    <main>
-      <div className='py-6 px-10 cursor-pointer'>
-        <svg onClick={(e) => handleClick(e)} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.87c1.355 0 2.697.055 4.024.165C17.155 8.51 18 9.473 18 10.608v2.513m-3-4.87v-1.5m-6 1.5v-1.5m12 9.75l-1.5.75a3.354 3.354 0 01-3 0 3.354 3.354 0 00-3 0 3.354 3.354 0 01-3 0 3.354 3.354 0 00-3 0 3.354 3.354 0 01-3 0L3 16.5m15-3.38a48.474 48.474 0 00-6-.37c-2.032 0-4.034.125-6 .37m12 0c.39.049.777.102 1.163.16 1.07.16 1.837 1.094 1.837 2.175v5.17c0 .62-.504 1.124-1.125 1.124H4.125A1.125 1.125 0 013 20.625v-5.17c0-1.08.768-2.014 1.837-2.174A47.78 47.78 0 016 13.12M12.265 3.11a.375.375 0 11-.53 0L12 2.845l.265.265zm-3 0a.375.375 0 11-.53 0L9 2.845l.265.265zm6 0a.375.375 0 11-.53 0L15 2.845l.265.265z" />
-        </svg>
-      </div>
-
-      <h1 className='absolute font-bold text-[7rem] top-1/2 left-1/2 transform -translate-x-96 -translate-y-72 text-[#146C94]'>Kenny & Aira</h1>
-      <img className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-44" width="500px" height="auto" src="./Intersect.png" alt="cats" />
-      <div className={`${menu} transition-all duration-700 ease-out-in`}>
-        <Header />
-      </div>
-    </main>
+    <div>
+      <Nav/>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/photo-gallery" element={<PhotoGallery />} />
+        <Route
+          path="/about"
+          element={<About />}
+        />
+        <Route path="/extra" element={<Extra />} />
+      </Routes>
+    </div>
   );
 }
 
