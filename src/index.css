@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+   background-color: #F6F1F1
+}
+
 /* 
 Color Palette
 #F6F1F1
