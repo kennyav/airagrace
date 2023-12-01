@@ -5,7 +5,7 @@ import { useDrag } from '@use-gesture/react';
 import * as utils from './utils';
 import './styles.css';
 
-export default function PhotoDeck({ cards }) {
+export default function PhotoDeck({ cards, name }) {
   const [gone] = useState(() => new Set()); // The set flags all the cards that are flicked out
   const [props, api] = useSprings(cards.length, (i) => ({
     ...utils.to(i),
@@ -48,7 +48,7 @@ export default function PhotoDeck({ cards }) {
             {...bind(i)}
             style={{
               transform: interpolate([rot, scale], utils.trans),
-              backgroundImage: `url(kenny/${cards[i].url})`,
+              backgroundImage: `url(${name}/${cards[i].url})`,
               width: cards[i].orientation === 'portrait' ? '240px' : '320px',
               height: cards[i].orientation === 'portrait' ? '320px' : '240px',
             }}

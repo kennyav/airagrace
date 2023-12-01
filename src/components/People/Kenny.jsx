@@ -4,6 +4,6 @@ import PHOTOS from '../Polaroids/kenny.json'
 
 export default function Kenny() {
    return (
-      <Test cards={PHOTOS} />
+      <Test cards={PHOTOS} name={'kenny'}/>
    )
 }
