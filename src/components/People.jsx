@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 
 export default function People() {
 
+  // style
   const style = 'transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-[#AFD3E2] rounded-md p-2 flex items-center justify-center'
   return (
     <div className='grid md:grid-cols-4 grid-cols-2 grid-flow-row gap-4 lg:text-3xl md:text-xl text-lg text-[#19A7CE] p-10 '>
