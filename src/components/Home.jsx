@@ -13,7 +13,7 @@ export default function Home() {
 
    return (
       <div className="flex flex-col items-center justify-center text-center h-screen">
-         <h1 className='font-bold lg:text-6xl text-5xl text-[#AFD3E2]'>Happy Birthday</h1>
+         <h1 className='font-bold lg:text-6xl text-5xl text-[#AFD3E2]'>Happy Birthday!</h1>
          <h1 className='font-bold lg:text-4xl text-3xl px-6 text-[#146C94]'>Christineil Aira Grace Catherine Lagare Berame Courselle</h1>
          <ConfettiExplosion key={explosionKey} />
          <button 
