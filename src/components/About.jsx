@@ -3,7 +3,7 @@ import React from 'react'
 export default function About() {
   return (
     <div className='flex flex-col text-center pt-12'>
-      <h1 className='font-bold text-7xl text-[#AFD3E2]'>Photo Gallery</h1>
+      <h1 className='font-bold text-7xl text-[#AFD3E2]'>About</h1>
       <h2 className='text-4xl text-justify p-10 text-[#146C94]'>
         I wanted to create this website so you could have a place to look back on all the your memories of being 24.
         I hope that this year has been memorable for you and I look forward to creating new ones as we grow together. It is nice
