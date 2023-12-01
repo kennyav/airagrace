@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         body: ['Author-Regular', 'sans-serif'],
-      },
+      }
     },
   },
   plugins: [],

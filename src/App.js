@@ -25,7 +25,7 @@ import Megan from './components/People/Megan.jsx'
 function App() {
 
   return (
-    <div>
+    <div className='custom-cursor'>
       <Nav/>
       <Routes>
         <Route exact path="/" element={<Home />} />
